@@ -1,0 +1,328 @@
+namespace pryInstalacionYServiciosDeAlarmas;
+
+partial class Form1
+{
+    private System.ComponentModel.IContainer? components = null;
+    private Panel panelHeader = null!;
+    private Label lblTitulo = null!;
+    private Label lblSubtitulo = null!;
+    private TabControl tabPrincipal = null!;
+    private TabPage tabInstalacion = null!;
+    private TabPage tabServicios = null!;
+    private GroupBox grpCliente = null!;
+    private GroupBox grpInstalacion = null!;
+    private GroupBox grpCaracteristicas = null!;
+    private GroupBox grpServicio = null!;
+    private Label lblDni = null!;
+    private TextBox txtDni = null!;
+    private Label lblDireccion = null!;
+    private TextBox txtDireccion = null!;
+    private Label lblTipoAlarma = null!;
+    private ComboBox cmbTipoAlarma = null!;
+    private Label lblEspacios = null!;
+    private NumericUpDown nudEspacios = null!;
+    private Label lblTablero = null!;
+    private RadioButton rdoTableroSi = null!;
+    private RadioButton rdoTableroNo = null!;
+    private Label lblDesactivacion = null!;
+    private CheckBox chkControles = null!;
+    private CheckBox chkLlaves = null!;
+    private Label lblApp = null!;
+    private CheckBox chkApp = null!;
+    private Button btnCancelarInstalacion = null!;
+    private Button btnGuardarInstalacion = null!;
+    private Label lblNumeroCliente = null!;
+    private TextBox txtNumeroCliente = null!;
+    private Label lblDireccionServicio = null!;
+    private ComboBox cmbDireccionServicio = null!;
+    private Label lblFechaServicio = null!;
+    private DateTimePicker dtpFechaServicio = null!;
+    private Label lblAyudaFecha = null!;
+    private Button btnCancelarServicio = null!;
+    private Button btnGuardarServicio = null!;
+    private DataGridView dgvServicios = null!;
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
+            components?.Dispose();
+        base.Dispose(disposing);
+    }
+
+    private void InitializeComponent()
+    {
+        components = new System.ComponentModel.Container();
+        panelHeader = new Panel();
+        lblTitulo = new Label();
+        lblSubtitulo = new Label();
+        tabPrincipal = new TabControl();
+        tabInstalacion = new TabPage();
+        tabServicios = new TabPage();
+        grpCliente = new GroupBox();
+        grpInstalacion = new GroupBox();
+        grpCaracteristicas = new GroupBox();
+        grpServicio = new GroupBox();
+        lblDni = new Label();
+        txtDni = new TextBox();
+        lblDireccion = new Label();
+        txtDireccion = new TextBox();
+        lblTipoAlarma = new Label();
+        cmbTipoAlarma = new ComboBox();
+        lblEspacios = new Label();
+        nudEspacios = new NumericUpDown();
+        lblTablero = new Label();
+        rdoTableroSi = new RadioButton();
+        rdoTableroNo = new RadioButton();
+        lblDesactivacion = new Label();
+        chkControles = new CheckBox();
+        chkLlaves = new CheckBox();
+        lblApp = new Label();
+        chkApp = new CheckBox();
+        btnCancelarInstalacion = new Button();
+        btnGuardarInstalacion = new Button();
+        lblNumeroCliente = new Label();
+        txtNumeroCliente = new TextBox();
+        lblDireccionServicio = new Label();
+        cmbDireccionServicio = new ComboBox();
+        lblFechaServicio = new Label();
+        dtpFechaServicio = new DateTimePicker();
+        lblAyudaFecha = new Label();
+        btnCancelarServicio = new Button();
+        btnGuardarServicio = new Button();
+        dgvServicios = new DataGridView();
+
+        panelHeader.SuspendLayout();
+        tabPrincipal.SuspendLayout();
+        tabInstalacion.SuspendLayout();
+        tabServicios.SuspendLayout();
+        grpCliente.SuspendLayout();
+        grpInstalacion.SuspendLayout();
+        grpCaracteristicas.SuspendLayout();
+        grpServicio.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)nudEspacios).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)dgvServicios).BeginInit();
+        SuspendLayout();
+
+        panelHeader.BackColor = Color.FromArgb(31, 78, 121);
+        panelHeader.Controls.Add(lblSubtitulo);
+        panelHeader.Controls.Add(lblTitulo);
+        panelHeader.Dock = DockStyle.Top;
+        panelHeader.Location = new Point(0, 0);
+        panelHeader.Size = new Size(1000, 102);
+
+        lblTitulo.AutoSize = true;
+        lblTitulo.Font = new Font("Segoe UI", 21F, FontStyle.Bold);
+        lblTitulo.ForeColor = Color.White;
+        lblTitulo.Location = new Point(30, 18);
+        lblTitulo.Text = "Instalaciones y servicios de alarmas";
+
+        lblSubtitulo.AutoSize = true;
+        lblSubtitulo.Font = new Font("Segoe UI", 10F);
+        lblSubtitulo.ForeColor = Color.FromArgb(220, 235, 248);
+        lblSubtitulo.Location = new Point(33, 63);
+        lblSubtitulo.Text = "Registro de clientes, instalaciones y mantenimiento anual";
+
+        tabPrincipal.Controls.Add(tabInstalacion);
+        tabPrincipal.Controls.Add(tabServicios);
+        tabPrincipal.Dock = DockStyle.Fill;
+        tabPrincipal.Font = new Font("Segoe UI", 10F);
+        tabPrincipal.Location = new Point(0, 102);
+        tabPrincipal.Padding = new Point(18, 8);
+        tabPrincipal.SelectedIndex = 0;
+
+        tabInstalacion.BackColor = Color.FromArgb(245, 247, 250);
+        tabInstalacion.Controls.Add(grpCaracteristicas);
+        tabInstalacion.Controls.Add(grpInstalacion);
+        tabInstalacion.Controls.Add(grpCliente);
+        tabInstalacion.Location = new Point(4, 29);
+        tabInstalacion.Padding = new Padding(24, 20, 24, 20);
+        tabInstalacion.Text = "Nueva instalación";
+
+        grpCliente.Controls.Add(lblDni);
+        grpCliente.Controls.Add(txtDni);
+        grpCliente.Location = new Point(24, 20);
+        grpCliente.Size = new Size(936, 88);
+        grpCliente.Text = "  Datos del cliente  ";
+
+        lblDni.AutoSize = true;
+        lblDni.Location = new Point(22, 38);
+        lblDni.Text = "DNI del cliente *";
+        txtDni.Location = new Point(172, 34);
+        txtDni.Size = new Size(235, 25);
+
+        grpInstalacion.Controls.Add(lblDireccion);
+        grpInstalacion.Controls.Add(txtDireccion);
+        grpInstalacion.Controls.Add(lblTipoAlarma);
+        grpInstalacion.Controls.Add(cmbTipoAlarma);
+        grpInstalacion.Location = new Point(24, 124);
+        grpInstalacion.Size = new Size(936, 120);
+        grpInstalacion.Text = "  Datos de la instalación  ";
+
+        lblDireccion.AutoSize = true;
+        lblDireccion.Location = new Point(22, 38);
+        lblDireccion.Text = "Dirección de instalación *";
+        txtDireccion.Location = new Point(215, 34);
+        txtDireccion.Size = new Size(675, 25);
+        lblTipoAlarma.AutoSize = true;
+        lblTipoAlarma.Location = new Point(22, 78);
+        lblTipoAlarma.Text = "Tipo de alarma *";
+        cmbTipoAlarma.DropDownStyle = ComboBoxStyle.DropDownList;
+        cmbTipoAlarma.Items.AddRange(new object[] { "Alarma domiciliaria", "Alarma comercial", "Alarma industrial", "Alarma monitoreada" });
+        cmbTipoAlarma.Location = new Point(215, 74);
+        cmbTipoAlarma.Size = new Size(300, 25);
+
+        grpCaracteristicas.Controls.Add(lblEspacios);
+        grpCaracteristicas.Controls.Add(nudEspacios);
+        grpCaracteristicas.Controls.Add(lblTablero);
+        grpCaracteristicas.Controls.Add(rdoTableroSi);
+        grpCaracteristicas.Controls.Add(rdoTableroNo);
+        grpCaracteristicas.Controls.Add(lblDesactivacion);
+        grpCaracteristicas.Controls.Add(chkControles);
+        grpCaracteristicas.Controls.Add(chkLlaves);
+        grpCaracteristicas.Controls.Add(lblApp);
+        grpCaracteristicas.Controls.Add(chkApp);
+        grpCaracteristicas.Controls.Add(btnCancelarInstalacion);
+        grpCaracteristicas.Controls.Add(btnGuardarInstalacion);
+        grpCaracteristicas.Location = new Point(24, 260);
+        grpCaracteristicas.Size = new Size(936, 242);
+        grpCaracteristicas.Text = "  Características requeridas  ";
+
+        lblEspacios.AutoSize = true;
+        lblEspacios.Location = new Point(22, 38);
+        lblEspacios.Text = "Espacios para sensores *";
+        nudEspacios.Location = new Point(215, 34);
+        nudEspacios.Minimum = 1;
+        nudEspacios.Maximum = 999;
+        nudEspacios.Size = new Size(105, 25);
+        nudEspacios.Value = 1;
+        lblTablero.AutoSize = true;
+        lblTablero.Location = new Point(22, 78);
+        lblTablero.Text = "¿Tendrá tablero general? *";
+        rdoTableroSi.AutoSize = true;
+        rdoTableroSi.Location = new Point(215, 76);
+        rdoTableroSi.Text = "Sí";
+        rdoTableroNo.AutoSize = true;
+        rdoTableroNo.Location = new Point(270, 76);
+        rdoTableroNo.Text = "No";
+        lblDesactivacion.AutoSize = true;
+        lblDesactivacion.Location = new Point(22, 118);
+        lblDesactivacion.Text = "Desactivación mediante *";
+        chkControles.AutoSize = true;
+        chkControles.Location = new Point(215, 116);
+        chkControles.Text = "Controles";
+        chkLlaves.AutoSize = true;
+        chkLlaves.Location = new Point(315, 116);
+        chkLlaves.Text = "Llaves";
+        lblApp.AutoSize = true;
+        lblApp.Location = new Point(22, 158);
+        lblApp.Text = "¿Control por aplicación? *";
+        chkApp.AutoSize = true;
+        chkApp.Location = new Point(215, 156);
+        chkApp.Text = "Sí, necesita control por APP";
+        btnCancelarInstalacion.FlatStyle = FlatStyle.Flat;
+        btnCancelarInstalacion.Location = new Point(622, 190);
+        btnCancelarInstalacion.Size = new Size(130, 32);
+        btnCancelarInstalacion.Text = "Cancelar";
+        btnGuardarInstalacion.BackColor = Color.FromArgb(31, 78, 121);
+        btnGuardarInstalacion.FlatStyle = FlatStyle.Flat;
+        btnGuardarInstalacion.ForeColor = Color.White;
+        btnGuardarInstalacion.Location = new Point(765, 190);
+        btnGuardarInstalacion.Size = new Size(145, 32);
+        btnGuardarInstalacion.Text = "Guardar instalación";
+
+        tabServicios.BackColor = Color.FromArgb(245, 247, 250);
+        tabServicios.Controls.Add(grpServicio);
+        tabServicios.Controls.Add(dgvServicios);
+        tabServicios.Location = new Point(4, 29);
+        tabServicios.Padding = new Padding(24, 20, 24, 20);
+        tabServicios.Text = "Servicios anuales";
+
+        grpServicio.Controls.Add(lblNumeroCliente);
+        grpServicio.Controls.Add(txtNumeroCliente);
+        grpServicio.Controls.Add(lblDireccionServicio);
+        grpServicio.Controls.Add(cmbDireccionServicio);
+        grpServicio.Controls.Add(lblFechaServicio);
+        grpServicio.Controls.Add(dtpFechaServicio);
+        grpServicio.Controls.Add(lblAyudaFecha);
+        grpServicio.Controls.Add(btnCancelarServicio);
+        grpServicio.Controls.Add(btnGuardarServicio);
+        grpServicio.Location = new Point(24, 20);
+        grpServicio.Size = new Size(936, 178);
+        grpServicio.Text = "  Registrar servicio de mantenimiento  ";
+
+        lblNumeroCliente.AutoSize = true;
+        lblNumeroCliente.Location = new Point(22, 38);
+        lblNumeroCliente.Text = "Número de cliente *";
+        txtNumeroCliente.Location = new Point(190, 34);
+        txtNumeroCliente.Size = new Size(190, 25);
+        lblDireccionServicio.AutoSize = true;
+        lblDireccionServicio.Location = new Point(420, 38);
+        lblDireccionServicio.Text = "Dirección instalada *";
+        cmbDireccionServicio.DropDownStyle = ComboBoxStyle.DropDownList;
+        cmbDireccionServicio.Location = new Point(585, 34);
+        cmbDireccionServicio.Size = new Size(325, 25);
+        lblFechaServicio.AutoSize = true;
+        lblFechaServicio.Location = new Point(22, 82);
+        lblFechaServicio.Text = "Fecha del servicio *";
+        dtpFechaServicio.Format = DateTimePickerFormat.Short;
+        dtpFechaServicio.Location = new Point(190, 78);
+        dtpFechaServicio.Size = new Size(190, 25);
+        lblAyudaFecha.AutoSize = true;
+        lblAyudaFecha.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+        lblAyudaFecha.ForeColor = Color.FromArgb(90, 100, 110);
+        lblAyudaFecha.Location = new Point(400, 82);
+        lblAyudaFecha.Text = "La fecha debe ser posterior al día de hoy";
+        btnCancelarServicio.FlatStyle = FlatStyle.Flat;
+        btnCancelarServicio.Location = new Point(622, 125);
+        btnCancelarServicio.Size = new Size(130, 32);
+        btnCancelarServicio.Text = "Cancelar";
+        btnGuardarServicio.BackColor = Color.FromArgb(31, 78, 121);
+        btnGuardarServicio.FlatStyle = FlatStyle.Flat;
+        btnGuardarServicio.ForeColor = Color.White;
+        btnGuardarServicio.Location = new Point(765, 125);
+        btnGuardarServicio.Size = new Size(145, 32);
+        btnGuardarServicio.Text = "Guardar servicio";
+
+        dgvServicios.AllowUserToAddRows = false;
+        dgvServicios.AllowUserToDeleteRows = false;
+        dgvServicios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        dgvServicios.BackgroundColor = Color.White;
+        dgvServicios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dgvServicios.Location = new Point(24, 220);
+        dgvServicios.ReadOnly = true;
+        dgvServicios.RowHeadersVisible = false;
+        dgvServicios.Size = new Size(936, 245);
+        dgvServicios.Columns.Add("NumeroCliente", "N.º cliente");
+        dgvServicios.Columns.Add("Direccion", "Dirección instalada");
+        dgvServicios.Columns.Add("Fecha", "Fecha del servicio");
+
+        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleMode = AutoScaleMode.Font;
+        BackColor = Color.FromArgb(245, 247, 250);
+        ClientSize = new Size(1000, 650);
+        Controls.Add(tabPrincipal);
+        Controls.Add(panelHeader);
+        Font = new Font("Segoe UI", 10F);
+        MinimumSize = new Size(850, 600);
+        Name = "Form1";
+        StartPosition = FormStartPosition.CenterScreen;
+        Text = "Instalaciones y servicios de alarmas";
+
+        panelHeader.ResumeLayout(false);
+        panelHeader.PerformLayout();
+        tabPrincipal.ResumeLayout(false);
+        tabInstalacion.ResumeLayout(false);
+        tabServicios.ResumeLayout(false);
+        grpCliente.ResumeLayout(false);
+        grpCliente.PerformLayout();
+        grpInstalacion.ResumeLayout(false);
+        grpInstalacion.PerformLayout();
+        grpCaracteristicas.ResumeLayout(false);
+        grpCaracteristicas.PerformLayout();
+        grpServicio.ResumeLayout(false);
+        grpServicio.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)nudEspacios).EndInit();
+        ((System.ComponentModel.ISupportInitialize)dgvServicios).EndInit();
+        ResumeLayout(false);
+    }
+}
